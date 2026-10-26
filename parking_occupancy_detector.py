@@ -3,7 +3,8 @@ import pickle
 import pandas as pd
 from datetime import datetime
 
-parking_image_path = 'parking_image/parking_image.jpg.jpg'
+# parking_image_path = 'parking_image/parking_image.jpg.jpg'
+parking_image_path = 'parking_image.jpg.jpg'
 frame = cv2.imread(parking_image_path)
 if frame is None:
     raise FileNotFoundError(f"Image not found at {parking_image_path}")
