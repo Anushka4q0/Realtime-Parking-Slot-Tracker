@@ -46,7 +46,8 @@ def mouse_events(event, x, y, flag, param):
 
 while True:
 
-    img = cv2.imread('parking_image/parking_image.jpg.jpg')
+    # img = cv2.imread('parking_image/parking_image.jpg.jpg')
+    img = cv2.imread('parking_image.jpg.jpg')
 
     for position in park_positions:
         cv2.rectangle(img, position, (position[0] + width, position[1] + h), (255, 0, 255), 3)
